@@ -1,5 +1,10 @@
 extends Area2D
 
+# % instead of $ marks an unique node that is a node that is marked as 
+# unique (right click on the node and selece "Access as Unique Name".
+# Note that unique names are valid only within the same scene.
+@onready var game_manager: Node = %GameManager
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -14,6 +19,6 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print("+1 coin!")
+	game_manager.add_point()
 	# remove the coin
 	queue_free()

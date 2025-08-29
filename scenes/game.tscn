@@ -1,5 +1,6 @@
-[gd_scene load_steps=15 format=3 uid="uid://dx12jlgb14hxa"]
+[gd_scene load_steps=16 format=3 uid="uid://dx12jlgb14hxa"]
 
+[ext_resource type="Script" uid="uid://d3hg388am2e3t" path="res://scripts/game_manager.gd" id="1_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://corawxap2o5fs" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://iifle3ya4hli" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://dt0rg2utig0ha" path="res://scenes/platform.tscn" id="3_lnu2h"]
@@ -215,6 +216,10 @@ _data = {
 
 [node name="Game" type="Node2D"]
 
+[node name="GameManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_0tnpc")
+
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-7, -2)
 tile_set = SubResource("TileSet_lbhrr")
@@ -309,3 +314,13 @@ theme_override_colors/font_color = Color(0, 0.133333, 0.345098, 1)
 theme_override_fonts/font = ExtResource("8_gee14")
 theme_override_font_sizes/font_size = 8
 text = "Falling hurts..."
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 520.0
+offset_top = -144.0
+offset_right = 571.0
+offset_bottom = -128.0
+theme_override_colors/font_color = Color(0.0470588, 0.592157, 0.862745, 1)
+theme_override_fonts/font = ExtResource("8_gee14")
+theme_override_font_sizes/font_size = 8
+text = "YOU WIN!"
