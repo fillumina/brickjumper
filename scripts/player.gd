@@ -21,6 +21,12 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
+	if Input.is_action_pressed("restart"):
+		get_tree().reload_current_scene()
+
+	if Input.is_action_pressed("quit"):
+		get_tree().quit()
+
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
