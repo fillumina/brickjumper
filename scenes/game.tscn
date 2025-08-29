@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dx12jlgb14hxa"]
+[gd_scene load_steps=16 format=3 uid="uid://dx12jlgb14hxa"]
 
 [ext_resource type="Script" uid="uid://d3hg388am2e3t" path="res://scripts/game_manager.gd" id="1_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://corawxap2o5fs" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://iifle3ya4hli" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://dt0rg2utig0ha" path="res://scenes/platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://3pchf1uj0mqt" path="res://scenes/coin.tscn" id="4_lbhrr"]
-[ext_resource type="Script" uid="uid://6oxrgwsk26s7" path="res://area_2d.gd" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://l55xh2ls6aw2" path="res://scenes/killzone.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://bl53rybhqvnqb" path="res://scenes/slime.tscn" id="7_u5sy4"]
 [ext_resource type="FontFile" uid="uid://dxs45oov8xk3b" path="res://assets/fonts/PixelOperator8.ttf" id="8_gee14"]
@@ -264,7 +263,6 @@ position = Vector2(225, 53)
 
 [node name="Coin5" parent="Coins" instance=ExtResource("4_lbhrr")]
 position = Vector2(209, 53)
-script = ExtResource("5_iywne")
 
 [node name="Coin2" parent="Coins" instance=ExtResource("4_lbhrr")]
 position = Vector2(66, 53)
