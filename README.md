@@ -2,11 +2,13 @@
 
 ![screenshot.png](screenshot.png)
 
-
-
 This game has been created following the youtube tutorial by Brackeys: [How to make a Video Game - Godot Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=LOhfqjmasi0)
 
 Many thanks for the wonderful and explicative tutorial!
+
+## Play
+
+You can play the game here: [BrickJumper](https://fillumina.github.io/brickjumper/). Enjoy!
 
 ## Assets
 
