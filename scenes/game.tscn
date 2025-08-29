@@ -314,17 +314,21 @@ position = Vector2(488, 61)
 
 [node name="Labels" type="Node" parent="."]
 
-[node name="Label" type="Label" parent="Labels"]
-offset_left = -72.0
-offset_top = -40.0
-offset_right = 19.0
-offset_bottom = -5.0
+[node name="InstructionsLabel" type="Label" parent="Labels"]
+offset_left = -60.0
+offset_top = -54.0
+offset_right = 51.0
+offset_bottom = -2.0
 theme_override_colors/font_color = Color(0.0745098, 0.305882, 0.74902, 1)
 theme_override_fonts/font = ExtResource("8_gee14")
 theme_override_font_sizes/font_size = 8
-text = "<null>"
+text = "Use space to jump
+arrows or A,D 
+to move
+R to restart
+Q to quit"
 
-[node name="Label2" type="Label" parent="Labels"]
+[node name="WarningLabel" type="Label" parent="Labels"]
 offset_left = 345.0
 offset_top = 72.0
 offset_right = 441.0
