@@ -1,6 +1,12 @@
 # BrickJumper
 
+![screenshot.png](screenshot.png)
+
+
+
 This game has been created following the youtube tutorial by Brackeys: [How to make a Video Game - Godot Beginner Tutorial - YouTube](https://www.youtube.com/watch?v=LOhfqjmasi0)
+
+Many thanks for the wonderful and explicative tutorial!
 
 ## Assets
 
@@ -19,5 +25,7 @@ There are some small improvements:
 - falling sound
 
 - message to tell if the player has got all coins (YOU WIN!)
-  
-  
+
+- quit game with Q
+
+- restart game with R
