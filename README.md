@@ -20,7 +20,9 @@ The used assed are those provided by Brackeys plus:
 
 ## Improvements
 
-There are some small improvements:
+There are some improvements over the tutorial:
+
+- on screen buttons for mobiles
 
 - jump sound
 
