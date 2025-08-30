@@ -18,35 +18,16 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="LeftButton" type="TouchScreenButton" parent="BottomLeft"]
-action = "left"
-
-[node name="TextureRect" type="TextureRect" parent="BottomLeft/LeftButton"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 40.0
-offset_top = -112.0
-offset_right = 120.0
-offset_bottom = -32.0
-grow_vertical = 0
-texture = ExtResource("1_y2wt4")
-expand_mode = 1
-stretch_mode = 4
+position = Vector2(48, -112)
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("1_y2wt4")
+action = "move_left"
 
 [node name="RightButton" type="TouchScreenButton" parent="BottomLeft"]
-action = "right"
-
-[node name="TextureRect" type="TextureRect" parent="BottomLeft/RightButton"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 160.0
-offset_top = -112.0
-offset_right = 240.0
-offset_bottom = -32.0
-grow_vertical = 0
-texture = ExtResource("2_is244")
-expand_mode = 1
+position = Vector2(168, -112)
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("2_is244")
+action = "move_right"
 
 [node name="BottomRight" type="Control" parent="."]
 layout_mode = 3
@@ -61,22 +42,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="JumpButton" type="TouchScreenButton" parent="BottomRight"]
+position = Vector2(-128, -112)
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("3_5j5o8")
 action = "jump"
-
-[node name="TextureRect" type="TextureRect" parent="BottomRight/JumpButton"]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -128.0
-offset_top = -112.0
-offset_right = -48.0
-offset_bottom = -32.0
-grow_horizontal = 0
-grow_vertical = 0
-texture = ExtResource("3_5j5o8")
-expand_mode = 1
 
 [node name="TopLeft" type="Control" parent="."]
 layout_mode = 3
@@ -85,15 +54,10 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="RestartButton" type="TouchScreenButton" parent="TopLeft"]
+position = Vector2(48, 16)
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("4_3s5lq")
 action = "restart"
-
-[node name="TextureRect" type="TextureRect" parent="TopLeft/RestartButton"]
-offset_left = 40.0
-offset_top = 16.0
-offset_right = 104.0
-offset_bottom = 80.0
-texture = ExtResource("4_3s5lq")
-expand_mode = 1
 
 [node name="TopRight" type="Control" parent="."]
 layout_mode = 3
@@ -105,15 +69,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="QuitButton" type="TouchScreenButton" parent="TopRight"]
+position = Vector2(-112, 8)
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("5_47wld")
 action = "quit"
-
-[node name="TextureRect" type="TextureRect" parent="TopRight/QuitButton"]
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = -128.0
-offset_top = 16.0
-offset_right = -64.0
-offset_bottom = 80.0
-grow_horizontal = 2
-texture = ExtResource("5_47wld")
-expand_mode = 1
