@@ -1,0 +1,119 @@
+[gd_scene load_steps=6 format=3 uid="uid://cul8a4vqv8glx"]
+
+[ext_resource type="Texture2D" uid="uid://dp5ytorh8nqkl" path="res://assets/buttons/circle-left-regular-full.svg" id="1_y2wt4"]
+[ext_resource type="Texture2D" uid="uid://myqwoiciyj5b" path="res://assets/buttons/circle-right-regular-full.svg" id="2_is244"]
+[ext_resource type="Texture2D" uid="uid://c6gxww8bsrb0f" path="res://assets/buttons/circle-up-regular-full.svg" id="3_5j5o8"]
+[ext_resource type="Texture2D" uid="uid://cjeh8xclnv3ip" path="res://assets/buttons/arrows-rotate-solid-full.svg" id="4_3s5lq"]
+[ext_resource type="Texture2D" uid="uid://c12b7amasn10m" path="res://assets/buttons/power-off-solid-full.svg" id="5_47wld"]
+
+[node name="OnScreenControls" type="CanvasLayer"]
+
+[node name="BottomLeft" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LeftButton" type="TouchScreenButton" parent="BottomLeft"]
+action = "left"
+
+[node name="TextureRect" type="TextureRect" parent="BottomLeft/LeftButton"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 40.0
+offset_top = -112.0
+offset_right = 120.0
+offset_bottom = -32.0
+grow_vertical = 0
+texture = ExtResource("1_y2wt4")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="RightButton" type="TouchScreenButton" parent="BottomLeft"]
+action = "right"
+
+[node name="TextureRect" type="TextureRect" parent="BottomLeft/RightButton"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 160.0
+offset_top = -112.0
+offset_right = 240.0
+offset_bottom = -32.0
+grow_vertical = 0
+texture = ExtResource("2_is244")
+expand_mode = 1
+
+[node name="BottomRight" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="JumpButton" type="TouchScreenButton" parent="BottomRight"]
+action = "jump"
+
+[node name="TextureRect" type="TextureRect" parent="BottomRight/JumpButton"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -112.0
+offset_right = -48.0
+offset_bottom = -32.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("3_5j5o8")
+expand_mode = 1
+
+[node name="TopLeft" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RestartButton" type="TouchScreenButton" parent="TopLeft"]
+action = "restart"
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/RestartButton"]
+offset_left = 40.0
+offset_top = 16.0
+offset_right = 104.0
+offset_bottom = 80.0
+texture = ExtResource("4_3s5lq")
+expand_mode = 1
+
+[node name="TopRight" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+grow_horizontal = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="QuitButton" type="TouchScreenButton" parent="TopRight"]
+action = "quit"
+
+[node name="TextureRect" type="TextureRect" parent="TopRight/QuitButton"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = -128.0
+offset_top = 16.0
+offset_right = -64.0
+offset_bottom = 80.0
+grow_horizontal = 2
+texture = ExtResource("5_47wld")
+expand_mode = 1
