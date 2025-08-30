@@ -221,14 +221,15 @@ unique_name_in_owner = true
 script = ExtResource("1_0tnpc")
 
 [node name="WinLabel" type="Label" parent="GameManager"]
-offset_left = 432.0
-offset_top = -184.0
-offset_right = 483.0
-offset_bottom = -176.0
+offset_left = 384.0
+offset_top = -182.0
+offset_right = 537.0
+offset_bottom = -174.0
 theme_override_colors/font_color = Color(0.0470588, 0.592157, 0.862745, 1)
 theme_override_fonts/font = ExtResource("8_gee14")
 theme_override_font_sizes/font_size = 8
-text = "PLAYING..."
+text = "You missed some coins..."
+horizontal_alignment = 1
 
 [node name="ScoreLabel" type="Label" parent="GameManager"]
 offset_left = 392.0

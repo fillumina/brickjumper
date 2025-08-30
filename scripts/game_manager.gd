@@ -19,5 +19,3 @@ func add_point():
 	
 	if score == win_score:
 		win_label.text = "YOU WON!"
-	else:
-		win_label.text = "YOU LOST!"

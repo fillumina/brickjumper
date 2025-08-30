@@ -99,6 +99,9 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_rsyy1"]
 radius = 5.09902
 
+[sub_resource type="Animation" id="Animation_1ikuy"]
+length = 0.001
+
 [sub_resource type="Animation" id="Animation_d14el"]
 resource_name = "pickup"
 tracks/0/type = "value"
@@ -151,9 +154,6 @@ tracks/3/keys = {
 "method": &"queue_free"
 }]
 }
-
-[sub_resource type="Animation" id="Animation_1ikuy"]
-length = 0.001
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wnlwo"]
 _data = {
