@@ -75,7 +75,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="QuitButton" type="TouchScreenButton" parent="TopRight"]
-position = Vector2(-144, 40)
+position = Vector2(-152, 48)
 scale = Vector2(0.15, 0.15)
 texture_normal = ExtResource("5_47wld")
 action = "quit"
