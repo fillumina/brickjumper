@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://cul8a4vqv8glx"]
+[gd_scene load_steps=7 format=3 uid="uid://cul8a4vqv8glx"]
 
+[ext_resource type="Script" uid="uid://da3m2genfdee1" path="res://scripts/on_screen_controls.gd" id="1_5j5o8"]
 [ext_resource type="Texture2D" uid="uid://dp5ytorh8nqkl" path="res://assets/buttons/circle-left-regular-full.svg" id="1_y2wt4"]
 [ext_resource type="Texture2D" uid="uid://myqwoiciyj5b" path="res://assets/buttons/circle-right-regular-full.svg" id="2_is244"]
 [ext_resource type="Texture2D" uid="uid://c6gxww8bsrb0f" path="res://assets/buttons/circle-up-regular-full.svg" id="3_5j5o8"]
@@ -7,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c12b7amasn10m" path="res://assets/buttons/power-off-solid-full.svg" id="5_47wld"]
 
 [node name="OnScreenControls" type="CanvasLayer"]
+script = ExtResource("1_5j5o8")
 
 [node name="BottomLeft" type="Control" parent="."]
 layout_mode = 3
