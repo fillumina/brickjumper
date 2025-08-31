@@ -1,6 +1,7 @@
-[gd_scene load_steps=17 format=3 uid="uid://dx12jlgb14hxa"]
+[gd_scene load_steps=18 format=3 uid="uid://dx12jlgb14hxa"]
 
 [ext_resource type="Script" uid="uid://d3hg388am2e3t" path="res://scripts/game_manager.gd" id="1_0tnpc"]
+[ext_resource type="Script" uid="uid://ducwhgmqotsf6" path="res://scripts/game.gd" id="1_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://corawxap2o5fs" path="res://scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="FontFile" uid="uid://dkkeow6ehqo5f" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_vtaks"]
 [ext_resource type="Texture2D" uid="uid://iifle3ya4hli" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
@@ -216,6 +217,7 @@ _data = {
 }
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_kvpfn")
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
