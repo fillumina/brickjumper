@@ -22,7 +22,9 @@ The used assed are those provided by Brackeys plus:
 
 There are some improvements over the tutorial:
 
-- on screen buttons for mobiles
+- on screen buttons for mobiles (hidden on desktops)
+
+- fix aspect ratio when played in portrait mode
 
 - jump sound
 
