@@ -20,15 +20,15 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="LeftButton" type="TouchScreenButton" parent="BottomLeft"]
-position = Vector2(48, -112)
-scale = Vector2(0.15, 0.15)
+position = Vector2(48, -152)
+scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("1_y2wt4")
 action = "move_left"
 visibility_mode = 1
 
 [node name="RightButton" type="TouchScreenButton" parent="BottomLeft"]
-position = Vector2(168, -112)
-scale = Vector2(0.15, 0.15)
+position = Vector2(224, -152)
+scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("2_is244")
 action = "move_right"
 visibility_mode = 1
@@ -46,8 +46,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="JumpButton" type="TouchScreenButton" parent="BottomRight"]
-position = Vector2(-128, -112)
-scale = Vector2(0.15, 0.15)
+position = Vector2(-168, -152)
+scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("3_5j5o8")
 action = "jump"
 visibility_mode = 1
@@ -59,8 +59,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="RestartButton" type="TouchScreenButton" parent="TopLeft"]
-position = Vector2(48, 16)
-scale = Vector2(0.1, 0.1)
+position = Vector2(64, 40)
+scale = Vector2(0.15, 0.15)
 texture_normal = ExtResource("4_3s5lq")
 action = "restart"
 visibility_mode = 1
@@ -75,8 +75,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="QuitButton" type="TouchScreenButton" parent="TopRight"]
-position = Vector2(-112, 8)
-scale = Vector2(0.1, 0.1)
+position = Vector2(-144, 40)
+scale = Vector2(0.15, 0.15)
 texture_normal = ExtResource("5_47wld")
 action = "quit"
 visibility_mode = 1
